@@ -1,0 +1,8 @@
+"Finding","Primary_Evidence","Direction","Validation_Status","Interpretation"
+"Broad neuronal dysfunction","Reactome ORA + GSEA","Down","Independently supported","Strongest systems-level disease signal"
+"Synaptic vesicle dysfunction","GO BP + Reactome ORA","Down","Independently supported","Reduced synaptic vesicle machinery"
+"Neurotransmitter signaling disruption","GO BP + Reactome ORA + GSEA","Down","Independently supported","Reduced neuronal communication machinery"
+"Metal-ion/stress response","GO BP + Reactome ORA","Up","Discovery finding","Increased cellular response to metal-associated stress"
+"ABC-family transport alteration","Leading-edge analysis","Altered","Not independently significant","Exploratory transport-associated signal"
+"Fatty-acid metabolism alteration","Leading-edge analysis","Altered","Not independently significant","Exploratory lipid-metabolic signal"
+"ABCD1-centered transport–lipid link","ABC/fatty-acid overlap + network","Shared candidate","Not independently validated","Hypothesis-generating mechanistic connection"

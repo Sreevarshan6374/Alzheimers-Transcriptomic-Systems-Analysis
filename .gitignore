@@ -1,0 +1,26 @@
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# R temporary files
+.Rhistory
+.RData
+.Rproj.user/
+
+# Windows temporary files
+Thumbs.db
+desktop.ini
+
+# Credentials
+.env
+.env.*
+
+# Temporary files
+*.tmp
+*.log
