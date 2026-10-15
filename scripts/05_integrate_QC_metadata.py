@@ -6,8 +6,8 @@ from pathlib import Path
 # Integrate QC + GEO metadata
 # =========================
 
-BASE = Path(r"D:\Neurosys14")
-PROCESSED = BASE / "data" / "processed"
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROCESSED = PROJECT_ROOT / "data" / "processed"
 
 pca_file = PROCESSED / "GSE132903_PCA_coordinates.csv"
 corr_file = PROCESSED / "GSE132903_mean_sample_correlation.csv"

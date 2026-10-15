@@ -2,9 +2,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-BASE = Path(r"D:\Neurosys14")
-PROCESSED = BASE / "data" / "processed"
-FIGURES = BASE / "results" / "figures"
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROCESSED = PROJECT_ROOT / "data" / "processed"
+FIGURES = PROJECT_ROOT / "results" / "figures"
+FIGURES.mkdir(parents=True, exist_ok=True)
 
 expression_file = PROCESSED / "GSE132903_expression_matrix.csv"
 metadata_file = PROCESSED / "GSE132903_sample_metadata.csv"

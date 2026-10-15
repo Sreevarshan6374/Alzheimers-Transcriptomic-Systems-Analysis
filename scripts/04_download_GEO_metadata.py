@@ -7,8 +7,9 @@ from pathlib import Path
 # Download GSE132903 metadata
 # =========================
 
-BASE = Path(r"D:\Neurosys14")
-PROCESSED = BASE / "data" / "processed"
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROCESSED = PROJECT_ROOT / "data" / "processed"
+PROCESSED.mkdir(parents=True, exist_ok=True)
 
 print("Downloading GSE132903 metadata from GEO...")
 

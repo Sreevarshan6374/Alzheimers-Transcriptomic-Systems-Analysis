@@ -1,13 +1,15 @@
 import pandas as pd
 from pathlib import Path
 
-BASE = Path(r"D:\Neurosys14")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
-EXPR_FILE = BASE / "data" / "processed" / "GSE132903_expression_matrix.csv"
-ANN_FILE = BASE / "data" / "processed" / "GSE132903_probe_annotation.csv"
+PROCESSED = PROJECT_ROOT / "data" / "processed"
 
-OUT_EXPR = BASE / "data" / "processed" / "GSE132903_gene_expression_matrix.csv"
-OUT_MAP = BASE / "data" / "processed" / "GSE132903_probe_selection.csv"
+EXPR_FILE = PROCESSED / "GSE132903_expression_matrix.csv"
+ANN_FILE = PROCESSED / "GSE132903_probe_annotation.csv"
+
+OUT_EXPR = PROCESSED / "GSE132903_gene_expression_matrix.csv"
+OUT_MAP = PROCESSED / "GSE132903_probe_selection.csv"
 
 print("Loading expression matrix...")
 expr = pd.read_csv(EXPR_FILE)
