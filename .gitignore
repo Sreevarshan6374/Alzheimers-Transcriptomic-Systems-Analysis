@@ -24,3 +24,8 @@ desktop.ini
 # Temporary files
 *.tmp
 *.log
+# Large source and intermediate datasets
+data/raw/
+data/processed/GSE132903_expression_matrix.csv
+data/processed/GSE132903_gene_expression_matrix.csv
+data/processed/GSE132903_family.soft.gz
